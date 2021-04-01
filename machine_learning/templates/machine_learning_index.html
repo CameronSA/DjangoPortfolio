@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>Machine Learning</h1>
+    <hr>
+    <h4>Modern machine learning can be split into two distinct categories:</h4>
+    <br>
+    <h3><a href="{% url 'supervised_learning_index' %}">Supervised Learning</a></h3>
+    <p>Supervised learning involves training, validation and test datasets. In supervised learning, the expected results are known ahead of time. Sort of like turning up to a pub quiz with a cheat sheet. An example of a dataset for which supervised learning would be required is house prices. In this example, the expected results are the prices themselves, and other factors such as the size of the house, number of of rooms etc are taken as input features. Other examples include spam email detection, cancer detection, and in some cases, natural language processing</p>
+    
+    <p>The algorithm is typically 'trained' on the training set using the input features, whereby the parameters or weights of the algorithm are chosen such that the error between what the algorithm 'thinks' the answers are and what the answers actually are (in mathematical terms, the cost function) is minimised. After training, the algorithm is then tested on the validation and test sets. The reason for both validation test sets (as opposed to just a test set), is such that elements of the algorithm that require the trained parameters to be known can be tuned, such as the order of a polynomial fit. This avoids unintentionally fitting an algorithm to a test data set, thus reducing any potential bias.</p>
+
+    <p>Supervised learning is typically split into two subcategories: regression and classification. Regression problems involve attempting to predict a continuous value, such as house prices, or trying to draw a line of best fit to a dataset. It therefore follows that classification problems involve attempting to predict a discrete value, such as whether or not a tumour is cancerous, or whether the current weather is sunny, cloudy, or stormy.</p>
+
+    <h3><a href="{% url 'unsupervised_learning_index' %}">Unsupervised Learning</a></h3>
+    <p>Unlike supervised learning, in unsupervised learning the expected results are not known ahead of time. Thus, unsupervised learning presents some obvious challenges. Example use cases for unsupervised learning would include anomaly detection, cluster analysis, and detection of celestial objects</p>
+
+    <p>Because, in most cases, it is almost impossible to quantitatively compare an unsupervised algorithm's performance to the 'real' answers, since those answers do not exist, unsupervised algorithms can often introduce a certain degree of subjectivity, and should be taken with a pinch of salt.</p>
+</div>
+{% endblock %}
