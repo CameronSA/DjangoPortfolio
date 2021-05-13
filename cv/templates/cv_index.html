@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block page_content %}
 <div>
     <h1 class='col-md-8'>Curriculum Vitae</h1>
-    <div class="float-left" style="width: 60%;">
+    <div class="float-left" style="width: 37%;">
         <div class="raised-container">
             <h4>Personal Details</h4>
             <table>
@@ -35,7 +35,9 @@
             <progress class="skill-bar" value="9" max="10"></progress>
             <div>Machine Learning</div>
             <progress class="skill-bar" value="8" max="10"></progress>
-            <div>Amazon Web Services</div>
+            <div>Amazon Web Services*</div>
+            <progress class="skill-bar" value="8" max="10"></progress>
+            <div>Docker</div>
             <progress class="skill-bar" value="8" max="10"></progress>
             <div>SQL</div>
             <progress class="skill-bar" value="8" max="10"></progress>
@@ -45,11 +47,166 @@
             <progress class="skill-bar" value="6" max="10"></progress>
             <div>C++</div>
             <progress class="skill-bar" value="6" max="10"></progress>
+            <div>
+                <p></p>
+                <p>* Specific services used: </p>
+                <ul>
+                    <li>
+                        <div class="cv-title">Compute:</div>
+                        <div>Lambda, Batch</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Storage:</div>
+                        <div>S3, S3 Glacier</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Database:</div>
+                        <div>Dynamo DB</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Networking & Content Delivery:</div>
+                        <div>API Gateway</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Management & Governance:</div>
+                        <div>CloudWatch</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Machine Learning:</div>
+                        <div>SageMaker, Forecast</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Analytics:</div>
+                        <div>Athena, Redshift, QuickSight, Glue</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Security:</div>
+                        <div>Cognito</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Application Integrations:</div>
+                        <div>EventBridge, Simple Notification Service</div>
+                    </li>
+                    <li>
+                        <div class="cv-title">Containers</div>
+                        <div>Elastic Container Registry, Elastic Container Service</div>
+                    </li>
+                </ul>
+                <p class="cv-footnote">...and hopefully many more in the future!</p>
+            </div>
         </div>
     </div>
 
-    <div class="raised-container float-left">
-        <div>Float Column 2</div>
+    <div class="float-left" style="width:63%;">
+        <div class="raised-container">
+            <h4>Interests</h4>
+            <div>
+                Science in general, technology, engineering, programming, algorithmic trading, statistical modelling, AI, horse racing, skiing, reading (both fiction and non-fiction), video gaming, running, swimming, hiking, bodyboarding, travelling, nature.
+            </div>
+        </div>
+
+        <div class="raised-container">
+            <h4>Education</h4>
+            <table>
+                <tr>
+                    <td class="cv-date-range">2017-2018</td>
+                    <td>
+                        <div class="cv-title">Master's Project</div>
+                        <div class="cv-subtitle">University of Birmingham</div>
+                        <div>
+                            <p>Experimentally determined the hardness factors of various energy proton beams. The project required knowledge of semiconductor physics, particle physics, accelerator physics, nuclear physics, C++, and the ROOT data analysis
+                                framework.
+                            </p>
+                            <p> The work was incredibly well received; it was published in the Journal of Instrumentation in 2019 (link below), and I presented it at the 2018 RD50 meeting at CERN, as well as the Institute of Physics conference in 2019 at
+                                Imperial College, London.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="cv-date-range">2014-2018</td>
+                    <td>
+                        <div class="cv-title">MSci Physics with Particle Physics & Cosmology, Class 1</div>
+                        <div class="cv-subtitle">University of Birmingham</div>
+                        <div>
+                            <p>Undergraduate degree with an integrated Master's</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="cv-date-range">2011-2014</td>
+                    <td>
+                        <div class="cv-title">A-Levels</div>
+                        <div class="cv-subtitle">Queen Elizabeth's Grammar School</div>
+                        <div>
+                            <p>AAA - Physics, Chemistry, Maths with Mechanics</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="cv-date-range">2007-2011</td>
+                    <td>
+                        <div class="cv-title">GCSEs</div>
+                        <div class="cv-subtitle">Queen Elizabeth's Grammar School</div>
+                        <div>
+                            <div>2A*s - Physics, Maths</div>
+                            <div>5As - Biology, Chemistry, Design & Technology, Business, Music</div>
+                            <div>4Bs - French, Religious Studies, English Language, English Literature</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="raised-container">
+            <h4>Interests</h4>
+            <div>
+                Science in general, technology, engineering, programming, algorithmic trading, statistical modelling, AI, horse racing, skiing, reading (both fiction and non-fiction), video gaming, running, swimming, hiking, bodyboarding, travelling, nature.
+            </div>
+        </div>
+
+        <div class="raised-container">
+            <h4>Experience</h4>
+            <table>
+                <tr>
+                    <td class="cv-date-range">2019-pres</td>
+                    <td>
+                        <div class="cv-title">Software Engineer</div>
+                        <div class="cv-subtitle">Technolog Ltd</div>
+                        <div>
+                            <p>As my first professional role in a relatively small software department, in addition to my daily responsibilities, I found myself learning a number of technologies in a remarkably short space of time. As a result, I am now
+                                proficient in .NET MVC, Windows Presentation Foundation (WPF), and Amazon Web Services (specifically: Lambda, Cognito, API Gateway, Glue, Redshift, S3, Athena, Quicksight, Cloudwatch, EventBridge).</p>
+                            <p>Throughout these experiences, I have become proficient in various languages such as C#, Python, HTML, CSS, JavaScript, and SQL. My contributions during this time have included (but are not limited to) revamping the label printing
+                                system, developing desktop applications for use in quality control, and bolstering the company’s serverless capabilities through the use of Amazon Web Services and machine learning. This opened many doors for the company
+                                to provide new products and services that were not possible to create before.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="cv-date-range">2018-2019</td>
+                    <td>
+                        <div class="cv-title">Postgraduate Researcher</div>
+                        <div class="cv-subtitle">University of Birmingham</div>
+                        <div>
+                            <p>Funded by the European Research Council, I researched the eects of radiation damage on components of the ATLAS experiment, one of four main experiments on the Large Hadron Collider (LHC). During this time, I presented my work
+                                at the ITk conference in Oxford in 2018, and the Institute of Physics Joint High Energy Particle Physics and Astroparticle Physics conference in London in 2019.</p>
+                            <p>My results have also been shown in other meetings around Europe and beyond. However, despite this progress, I ultimately left the PhD to pursue a career in industry.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="raised-container">
+            <h4>Other Information</h4>
+            <ul>
+                <li>Hold a full, clean, UK driving license.</li>
+                <li>Partaken in several science outreach events. During these events, I inspired young people, as well as increased the general public’s awareness of science.</li>
+                <li>Publication: Experimental Determination of Proton Hardness Factors. Available <a href="https://arxiv.org/abs/1908.03049">here</a></li>
+                <!-- <li>GitHub repository <a href="https://github.com/CameronSA?tab=repositories">here</a></li> -->
+            </ul>
+        </div>
     </div>
 
 </div>
