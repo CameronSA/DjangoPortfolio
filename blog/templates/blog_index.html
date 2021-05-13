@@ -1,9 +1,7 @@
-{% extends "base.html" %}
-{% block page_content %}
+{% extends "base.html" %} {% block page_content %}
 <div class="col-md-8 offset-md-2">
     <h1>Blog Index</h1>
-    <hr>
-    {% for post in posts %}
+    <hr> {% for post in posts %}
     <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
     <small>
         {{ post.created_on.date }} |&nbsp;
@@ -14,7 +12,7 @@
         </a>&nbsp;
         {% endfor %}
     </small>
-    <p>{{ post.body | slice:":400" }}...</p>
+    <p>{{ post.body1 | slice:":400" }}...</p>
     {% endfor %}
 </div>
 {% endblock %}
