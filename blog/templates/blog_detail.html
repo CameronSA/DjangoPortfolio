@@ -1,7 +1,13 @@
 {% extends "base.html" %} {% block page_content %}
 <div class="col-md-8 offset-md-2">
     <h1>{{ post.title }}</h1>
-    <small>
+
+    <div class="col-md-8 centered-div">
+        <h6>{{post.subtitle}}</h6>
+    </div>
+
+    <div class="raised-container">
+        <small>
         {{ post.created_on.date }} |&nbsp;
         Categories:&nbsp;
         {% for category in post.categories.all %}
@@ -10,8 +16,27 @@
         </a>&nbsp;
         {% endfor %}
     </small> {% if 'null' not in post.cover.url %}
-    <img src="{{post.cover.url}}"> {% endif %}
-    <p>{{ post.body1 | linebreaks }}</p>
+        <div class="centered-div"><img src="{{post.cover.url}}"></div> {% endif %}
+
+        <h3>{{post.header1}}</h3>
+        <p>{{ post.body1 | linebreaks }}</p>
+        {% if 'null' not in post.image1.url %}
+        <div><img src="{{post.image1.url}}"></div> {% endif %}
+        <h3>{{post.header2}}</h3>
+        <p>{{ post.body2 | linebreaks }}</p>
+        {% if 'null' not in post.image2.url %}
+        <div><img src="{{post.image2.url}}"></div> {% endif %}
+        <h3>{{post.header3}}</h3>
+        <p>{{ post.body3 | linebreaks }}</p>
+        {% if 'null' not in post.image3.url %}
+        <div><img src="{{post.image3.url}}"></div> {% endif %}
+        <h3>{{post.header4}}</h3>
+        <p>{{ post.body4 | linebreaks }}</p>
+        {% if 'null' not in post.image4.url %}
+        <div><img src="{{post.image4.url}}"></div> {% endif %}
+        <p class="image-credits">{{post.image_credits}}</p>
+    </div>
+
     <h3>Leave a comment:</h3>
     <form action="/blog/{{ post.pk }}/" method="post">
         {% csrf_token %}
@@ -25,11 +50,16 @@
     </form>
     <h3>Comments:</h3>
     {% for comment in comments %}
-    <p>
-        On {{comment.created_on.date }}&nbsp;
-        <b>{{ comment.author }}</b> wrote:
-    </p>
-    <p>{{ comment.body }}</p>
+    <div class="raised-container">
+        <p>
+            On {{comment.created_on.date }}&nbsp;
+            <b>{{ comment.author }}</b> wrote:
+        </p>
+        <p>{{ comment.body }}</p>
+    </div>
     <hr> {% endfor %}
 </div>
+
 {% endblock %}
+
+<!--TODO: clear form after submission-->

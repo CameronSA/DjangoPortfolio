@@ -28,7 +28,7 @@ body {
 }
 
 .raised-container {
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 1rem;
     margin: 1rem;
     box-shadow: 1rem 1rem 1rem rgb(204, 204, 204, 0.5);
@@ -36,6 +36,11 @@ body {
     border-color: black;
     border: 1px;
     border-style: solid;
+}
+
+.blog-post-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1rem 1rem 1rem rgb(204, 204, 204, 0.5);
 }
 
 .float-left {
@@ -93,6 +98,12 @@ h1 span {
     padding: 10px;
 }
 
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 150%;
+}
+
 h4 {
     overflow: hidden;
 }
@@ -112,4 +123,32 @@ h4:after {
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid black;
+}
+
+div h6 {
+    font-style: italic;
+    display: inline-block;
+    text-align: center;
+    color: gray;
+    font-weight: 50%;
+}
+
+.centered-div {
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.image-credits {
+    font-style: italic;
+    color: gray;
+    font-weight: 50%;
+    font-size: small;
 }
