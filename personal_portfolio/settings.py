@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'projects',
     'machine_learning',
     'blog',
-    'cv'
+    'cv',
+    'home_page'
 ]
 
 MIDDLEWARE = [
