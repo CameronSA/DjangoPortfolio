@@ -1,3 +1,27 @@
 {% extends "base.html" %} {% block page_content %}
-<h1>Home</h1>
+<h1>Welcome to the Website!</h1>
+{% if 'null' not in image.image.url %}
+<div>
+    <div><img class='profile-picture' src="{{image.image.url}}"></div> {% endif %}
+    <div class='centered-div'>
+        <h3 class='centered-header'>Cameron Simpson-Allsop</h3>
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        <h2>Software Engineer,</h2>
+        <h2>Data Scientist,</h2>
+        <h2>Technology Enthusiast</h2>
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        <div style="text-align: center;">Email: csimpsonallsop@gmail.com</div>
+        <div style="text-align: center;"><a href="https://www.linkedin.com/in/cameron-simpson-allsop">LinkedIn</a></div>
+    </div>
+    <div>&nbsp;</div>
+</div>
+
+<!-- <div>
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="cameron-simpson-allsop" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/cameron-simpson-allsop?trk=profile-badge">Cameron Simpson-Allsop</a></div>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</div> -->
 {% endblock %}

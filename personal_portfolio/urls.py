@@ -20,12 +20,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path("projects/", include("projects.urls")),
     path("", include("home_page.urls")),
+    #path("projects/", include("projects.urls")),
     path("machine_learning/", include("machine_learning.urls")),
     path("blog/", include("blog.urls")),
-    path("cv/",include("cv.urls")),
-    #path('', include("blog.urls")),
+    path("cv/",include("cv.urls"))
 ]
 
 if settings.DEBUG:

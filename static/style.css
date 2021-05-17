@@ -155,3 +155,16 @@ img {
     font-weight: 50%;
     font-size: small;
 }
+
+.profile-picture {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.centered-header {
+    text-align: center;
+    font-size: 200%;
+    font-style: italic;
+}
